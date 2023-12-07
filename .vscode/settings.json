@@ -1,0 +1,10 @@
+{
+    "antlr4.generation": {
+      "antlrTool": "C:\\Users\\ferna\\Desktop\\antlr\\antlr-4.13.1-complete.jar",
+      "language": "Java",
+      "outputDir": "src",
+      "listeners": true,
+      "visitors": true
+    }
+  }
+  
