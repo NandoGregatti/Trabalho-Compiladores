@@ -7,15 +7,15 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface JavanesListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link JavanesParser#prog}.
+	 * Enter a parse tree produced by {@link JavanesParser#programa}.
 	 * @param ctx the parse tree
 	 */
-	void enterProg(JavanesParser.ProgContext ctx);
+	void enterPrograma(JavanesParser.ProgramaContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link JavanesParser#prog}.
+	 * Exit a parse tree produced by {@link JavanesParser#programa}.
 	 * @param ctx the parse tree
 	 */
-	void exitProg(JavanesParser.ProgContext ctx);
+	void exitPrograma(JavanesParser.ProgramaContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link JavanesParser#funcoes}.
 	 * @param ctx the parse tree

@@ -22,14 +22,15 @@ public class JavanesParser extends Parser {
 		STRING=26, FUNC=27, NUM=28, ID=29, EXP=30, ATRARIT=31, MULMODDIV=32, ADDSUB=33, 
 		OPARIT=34, COM=35, WS=36, ErrorChar=37;
 	public static final int
-		RULE_prog = 0, RULE_funcoes = 1, RULE_funcao = 2, RULE_param = 3, RULE_params = 4, 
-		RULE_bloco = 5, RULE_corpo = 6, RULE_stmt = 7, RULE_condicional = 8, RULE_declaracao = 9, 
-		RULE_retorno = 10, RULE_chamada = 11, RULE_args = 12, RULE_atribuicao = 13, 
-		RULE_cada = 14, RULE_enquanto = 15, RULE_iexpr = 16, RULE_expr = 17;
+		RULE_programa = 0, RULE_funcoes = 1, RULE_funcao = 2, RULE_param = 3, 
+		RULE_params = 4, RULE_bloco = 5, RULE_corpo = 6, RULE_stmt = 7, RULE_condicional = 8, 
+		RULE_declaracao = 9, RULE_retorno = 10, RULE_chamada = 11, RULE_args = 12, 
+		RULE_atribuicao = 13, RULE_cada = 14, RULE_enquanto = 15, RULE_iexpr = 16, 
+		RULE_expr = 17;
 	private static String[] makeRuleNames() {
 		return new String[] {
-			"prog", "funcoes", "funcao", "param", "params", "bloco", "corpo", "stmt", 
-			"condicional", "declaracao", "retorno", "chamada", "args", "atribuicao", 
+			"programa", "funcoes", "funcao", "param", "params", "bloco", "corpo", 
+			"stmt", "condicional", "declaracao", "retorno", "chamada", "args", "atribuicao", 
 			"cada", "enquanto", "iexpr", "expr"
 		};
 	}
@@ -105,19 +106,19 @@ public class JavanesParser extends Parser {
 	}
 
 	@SuppressWarnings("CheckReturnValue")
-	public static class ProgContext extends ParserRuleContext {
+	public static class ProgramaContext extends ParserRuleContext {
 		public FuncoesContext funcoes() {
 			return getRuleContext(FuncoesContext.class,0);
 		}
-		public ProgContext(ParserRuleContext parent, int invokingState) {
+		public ProgramaContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
-		@Override public int getRuleIndex() { return RULE_prog; }
+		@Override public int getRuleIndex() { return RULE_programa; }
 	}
 
-	public final ProgContext prog() throws RecognitionException {
-		ProgContext _localctx = new ProgContext(_ctx, getState());
-		enterRule(_localctx, 0, RULE_prog);
+	public final ProgramaContext programa() throws RecognitionException {
+		ProgramaContext _localctx = new ProgramaContext(_ctx, getState());
+		enterRule(_localctx, 0, RULE_programa);
 		try {
 			enterOuterAlt(_localctx, 1);
 			{

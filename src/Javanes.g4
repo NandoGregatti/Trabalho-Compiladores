@@ -1,6 +1,6 @@
 grammar Javanes;
 
-prog: funcoes ;
+programa: funcoes ;
 funcoes: funcao* ;
 funcao: 'func' ID '(' params ')' ID bloco ;
 param: ID ':' ID ;

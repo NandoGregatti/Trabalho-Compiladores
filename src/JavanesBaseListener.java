@@ -16,13 +16,13 @@ public class JavanesBaseListener implements JavanesListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterProg(JavanesParser.ProgContext ctx) { }
+	@Override public void enterPrograma(JavanesParser.ProgramaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitProg(JavanesParser.ProgContext ctx) { }
+	@Override public void exitPrograma(JavanesParser.ProgramaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
